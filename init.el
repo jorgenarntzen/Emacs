@@ -278,49 +278,50 @@
 
 ;; Den første listen er biblioteker:
 
-(use-package anaphora        :defer t :load-path "elpa/anaphora-20140728.1536/"      )
-(use-package button-lock     :defer t :load-path "elpa/button-lock-20150223.554/"    )
-(use-package concurrent      :defer t :load-path "elpa/concurrent-20161228.1930/"    )
-(use-package ctable          :defer t :load-path "elpa/ctable-20140304.1659/"        )
-(use-package dash            :defer t :load-path "elpa/dash-20170613.151/"           )
-(use-package deferred        :defer t :load-path "elpa/deferred-20170531.2135/"      )
-(use-package epc             :defer t :load-path "elpa/epc-20140609.2234/"           )
-(use-package epl             :defer t :load-path "elpa/epl-20150517.433/"            )
-(use-package f               :defer t :load-path "elpa/f-20170404.1039/"             )
-(use-package fuzzy           :defer t :load-path "elpa/fuzzy-20150729.2037/"         )
-(use-package gh              :defer t :load-path "elpa/gh-20170512.2049/"            )
-(use-package git             :defer t :load-path "elpa/git-20140128.241/"            )
-(use-package gntp            :defer t :load-path "elpa/gntp-20141024.1950/"          )
-(use-package helm-core       :defer t :load-path "elpa/helm-core-20170718.2220/"     )
-(use-package ht              :defer t :load-path "elpa/ht-20161015.1945/"            )
-(use-package jedi-core       :defer t :load-path "elpa/jedi-core-20170121.610/"      )
-(use-package let-alist       :defer t :load-path "elpa/let-alist-1.0.5/"             )
-(use-package log4e           :defer t :load-path "elpa/log4e-20170401.604/"          )
-(use-package logito          :defer t :load-path "elpa/logito-20120225.1255/"        )
-(use-package makey           :defer t :load-path "elpa/makey-20131231.630/"          )
-(use-package marshal         :defer t :load-path "elpa/marshal-20160807.1954/"       )
-(use-package pcache          :defer t :load-path "elpa/pcache-20170105.1414/"        )
-(use-package pkg-info        :defer t :load-path "elpa/pkg-info-20150517.443/"       )
-(use-package popup           :defer t :load-path "elpa/popup-20160709.729/"          )
-(use-package popwin          :defer t :load-path "elpa/popwin-20150315.600/"         )
-(use-package pos-tip         :defer t :load-path "elpa/pos-tip-20150318.813/"        )
-(use-package powerline       :defer t :load-path "elpa/powerline-20170708.1442/"     )
-(use-package pyvenv          :defer t :load-path "elpa/pyvenv-20170224.538/"         )
-(use-package rich-minority   :defer t :load-path "elpa/rich-minority-20160725.1255/" )
-(use-package s               :defer t :load-path "elpa/s-20170428.1026/"             )
-(use-package seq             :defer t :load-path "elpa/seq-2.20/"                    )
-(use-package tablist         :defer t :load-path "elpa/tablist-20170219.1935/"       )
-(use-package uuidgen         :defer t :load-path "elpa/uuidgen-20140918.1601/"       )
-(use-package web             :defer t :load-path "elpa/web-20141231.1201/"           )
-(use-package web-server      :defer t :load-path "elpa/web-server-20140905.1706/"    )
-(use-package websocket       :defer t :load-path "elpa/websocket-20170610.2117/"     )
-(use-package xml-rpc         :defer t :load-path "elpa/xml-rpc-20160430.1458/"       )
+(use-package anaphora           :defer t :load-path "elpa/anaphora-20140728.1536/"         )
+(use-package button-lock        :defer t :load-path "elpa/button-lock-20150223.554/"       )
+(use-package concurrent         :defer t :load-path "elpa/concurrent-20161228.1930/"       )
+(use-package ctable             :defer t :load-path "elpa/ctable-20140304.1659/"           )
+(use-package dash               :defer t :load-path "elpa/dash-20170613.151/"              )
+(use-package deferred           :defer t :load-path "elpa/deferred-20170531.2135/"         )
+(use-package epc                :defer t :load-path "elpa/epc-20140609.2234/"              )
+(use-package epl                :defer t :load-path "elpa/epl-20150517.433/"               )
+(use-package f                  :defer t :load-path "elpa/f-20170404.1039/"                )
+(use-package fuzzy              :defer t :load-path "elpa/fuzzy-20150729.2037/"            )
+(use-package gh                 :defer t :load-path "elpa/gh-20170512.2049/"               )
+(use-package git                :defer t :load-path "elpa/git-20140128.241/"               )
+(use-package gntp               :defer t :load-path "elpa/gntp-20141024.1950/"             )
+(use-package helm-core          :defer t :load-path "elpa/helm-core-20170718.2220/"        )
+(use-package ht                 :defer t :load-path "elpa/ht-20161015.1945/"               )
+(use-package jedi-core          :defer t :load-path "elpa/jedi-core-20170121.610/"         )
+(use-package let-alist          :defer t :load-path "elpa/let-alist-1.0.5/"                )
+(use-package log4e              :defer t :load-path "elpa/log4e-20170401.604/"             )
+(use-package logito             :defer t :load-path "elpa/logito-20120225.1255/"           )
+(use-package makey              :defer t :load-path "elpa/makey-20131231.630/"             )
+(use-package marshal            :defer t :load-path "elpa/marshal-20160807.1954/"          )
+(use-package pcache             :defer t :load-path "elpa/pcache-20170105.1414/"           )
+(use-package pkg-info           :defer t :load-path "elpa/pkg-info-20150517.443/"          )
+(use-package popup              :defer t :load-path "elpa/popup-20160709.729/"             )
+(use-package popwin             :defer t :load-path "elpa/popwin-20150315.600/"            )
+(use-package pos-tip            :defer t :load-path "elpa/pos-tip-20150318.813/"           )
+(use-package powerline          :defer t :load-path "elpa/powerline-20170708.1442/"        )
+(use-package python-environment :defer t :load-path "elpa/python-environment-20150310.153/")
+(use-package pyvenv             :defer t :load-path "elpa/pyvenv-20170224.538/"            )
+(use-package rich-minority      :defer t :load-path "elpa/rich-minority-20160725.1255/"    )
+(use-package s                  :defer t :load-path "elpa/s-20170428.1026/"                )
+(use-package seq                :defer t :load-path "elpa/seq-2.20/"                       )
+(use-package tablist            :defer t :load-path "elpa/tablist-20170219.1935/"          )
+(use-package uuidgen            :defer t :load-path "elpa/uuidgen-20140918.1601/"          )
+(use-package web                :defer t :load-path "elpa/web-20141231.1201/"              )
+(use-package web-server         :defer t :load-path "elpa/web-server-20140905.1706/"       )
+(use-package websocket          :defer t :load-path "elpa/websocket-20170610.2117/"        )
+(use-package xml-rpc            :defer t :load-path "elpa/xml-rpc-20160430.1458/"          )
 
 
 ;; Den andre listen er grafiske temaer:
 
-(use-package solarized-theme :defer t :load-path "elpa/solarized-theme-20170430.800/")
-(use-package zenburn-theme   :defer t :load-path "elpa/zenburn-theme-20170511.1337/" )
+(use-package solarized-theme    :defer t :load-path "elpa/solarized-theme-20170430.800/"   )
+(use-package zenburn-theme      :defer t :load-path "elpa/zenburn-theme-20170511.1337/"    )
 
 
 ;; Den tredje listen er pakker som kommer pre-installert med Emacs:
@@ -395,7 +396,7 @@
 
 
 (use-package bookmark
-  :load-path "elpa/bookmark+-20170703.1431/"
+  :load-path "elpa/bookmark+-20170719.2147/"
   :defer 10
   :config
   (use-package bookmark+))
@@ -572,7 +573,7 @@
 (use-package dired-toggle
   :load-path "elpa/dired-toggle-20140907.1349/"
   :bind ("C-. d" . dired-toggle)
-  
+
   :preface
   (defun my-dired-toggle-mode-hook ()
     (interactive)
@@ -822,7 +823,7 @@
   (defadvice flyspell-region (around fast-flyspell-region)
     (cl-flet ((sit-for (x) t)) ad-do-it))
 
-  (ad-activate 'flyspell-region)                                  
+  (ad-activate 'flyspell-region)
 
   :init
   (use-package ispell
@@ -921,7 +922,7 @@
       ;; i samme tilstand som vi begynte:
       (set-buffer-modified-p buffer-modified)
 
-      ;; Tilbyr mulighetene i den rekkefølgen de normalt genereres:      
+      ;; Tilbyr mulighetene i den rekkefølgen de normalt genereres:
       (delete he-search-string (reverse he-tried-table))))
 
   (defmacro my-ido-hippie-expand-with (hippie-expand-function)
@@ -1111,7 +1112,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 (use-package ibuffer
   :bind ("C-x C-b" . ibuffer)
- 
+
   :init
   (add-hook 'ibuffer-mode-hook
 	    #'(lambda ()
@@ -1363,7 +1364,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 	       :ignore-case t
 	       :doc-spec '(("(ansicl)Symbol Index" nil nil nil))))
 	    lisp-modes))
-    
+
     (auto-fill-mode 1)
     (paredit-mode 1)
     (redshank-mode 1)
@@ -1524,7 +1525,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
   :commands (recentf-mode
 	     recentf-add-file
 	     recentf-apply-filename-handlers)
-  
+
   :preface
   (defun recentf-add-dired-directory ()
     (if (and dired-directory
@@ -1547,7 +1548,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
   :mode ("\\.rb\\'" . ruby-mode)
   :interpreter ("ruby" . ruby-mode)
   :functions inf-ruby-keys
-  
+
   :config
   (use-package yari
     :load-path "elpa/yari-20151127.2339/"
@@ -1877,13 +1878,13 @@ The argument OLD has to be nil the first call of this function, and t for subseq
     :diminish elpy-mode
     :init
     (elpy-enable))
-      
-  :config                                  
+
+  :config
   (use-package jedi
     :load-path "elpa/jedi-20160425.2156/"
     :init
     (add-to-list 'ac-sources 'ac-source-jedi-direct)
-                                    
+
     (defvar jedi-config:with-virtualenv nil
       "Set to non-nil to point to a particular virtualenv.")
 
@@ -1923,7 +1924,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
     :load-path "elpa/highlight-indentation-20170502.43/")
 
   (defvar python-mode-initialized nil)
-                                  
+
   (defun my-python-mode-hook ()
     (unless python-mode-initialized
       (setq python-mode-initialized t)
@@ -1948,7 +1949,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
     (bind-key "C-c C-z" #'python-shell python-mode-map)
     (unbind-key "C-c c" python-mode-map))
-                                  
+
   (add-hook 'python-mode-hook
             (lambda ()
               (jedi:setup)
@@ -2050,7 +2051,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
                          ".~*~'"))
            (dired-buffers dired-buffers)
            (find-ls-option '("-print0 | xargs -0 ls -lta" . "-lta")))
-      ;; Check that it's really a directory:      
+      ;; Check that it's really a directory:
       (or (file-directory-p dir)
           (error "Backup directory does not exist: %s" dir))
       (with-current-buffer (get-buffer-create "*Backups*")
@@ -2092,7 +2093,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
         (message "Looking for backup files...")
         (shell-command (concat args "&") (current-buffer))
         ;; The next statement will bomb in classic dired (no optional arg
-        ;; allowed):        
+        ;; allowed):
         (dired-mode dir (cdr find-ls-option))
         (let ((map (make-sparse-keymap)))
           (set-keymap-parent map (current-local-map))
@@ -2106,10 +2107,10 @@ The argument OLD has to be nil the first call of this function, and t for subseq
         ;; Set subdir-alist so that Tree Dired will work:
         (if (fboundp 'dired-simple-subdir-alist)
             ;; Will work even with nested dired format (dired-nstd.el,v 1.15
-            ;; and later):            
+            ;; and later):
             (dired-simple-subdir-alist)
           ;; Else we have an ancient tree dired (or classic dired, where this
-          ;; does no harm):          
+          ;; does no harm):
           (set (make-local-variable 'dired-subdir-alist)
                (list (cons default-directory (point-min-marker)))))
         (set (make-local-variable 'dired-subdir-switches)
@@ -2119,13 +2120,13 @@ The argument OLD has to be nil the first call of this function, and t for subseq
         ;; subdir-alist points there:
         (insert "  " dir ":\n")
         ;; Make second line a ``find'' line in analogy to the ``total'' or
-        ;; ``wildcard'' line:        
+        ;; ``wildcard'' line:
         (insert "  " args "\n")
         (setq buffer-read-only t)
         (let ((proc (get-buffer-process (current-buffer))))
           (set-process-filter proc (function find-dired-filter))
           (set-process-sentinel proc (function find-dired-sentinel))
-          ;; Initialize the process marker; it is used by the filter:          
+          ;; Initialize the process marker; it is used by the filter:
           (move-marker (process-mark proc) 1 (current-buffer)))
         (setq mode-line-process '(":%s")))))
 
@@ -2144,7 +2145,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
                   "\\|\\.newsrc\\(\\.eld\\)?\\|"
                   "\\(archive/sent/\\|recentf\\`\\)\\)")
           filename)))
-  
+
   (setq backup-each-save-filter-function 'backup-each-save-filter)
 
   (defun my-dont-backup-files-p (filename)
@@ -2173,7 +2174,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 (use-package browse-kill-ring
   :load-path "elpa/browse-kill-ring-20160125.9/"
   :defer 10
-  
+
   :init
   (use-package browse-kill-ring+
     :load-path "elpa/browse-kill-ring+-20170221.757/"
@@ -2366,7 +2367,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
                     ;; default-filename argument. Set it explicitly to "" so
                     ;; if lusty-launch-dired is called in the directory we
                     ;; start at, the result is that directory instead of the
-                    ;; name of the current buffer.                    
+                    ;; name of the current buffer.
                     (lusty--run 'read-file-name default-directory "")))
               (when file
                 (switch-to-buffer
@@ -2374,7 +2375,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
                   (expand-file-name file))))))
         (if (fboundp 'helm-mode)
             (helm-mode (if helm-mode-prev 1 -1))))))
-  
+
   :config
   (defun my-lusty-setup-hook ()
     (bind-key "SPC" #'lusty-select-match lusty-mode-map)
@@ -2469,7 +2470,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
     :config
     (setq projectile-completion-system 'helm)
     (helm-projectile-on))
-  
+
   (projectile-mode)
 
   (bind-key "s s"
@@ -2563,7 +2564,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
   :bind (("M-x" . smex)
          ("M-x" . smex-major-mode-commands)
          ("C-c C-c M-x" . execute-extended-command))
-  
+
   :init
   (smex-initialize))
 
@@ -2629,7 +2630,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 		   ((string-match "jorgenar@student.sv.uio.no" from)"uio")
 		   ((string-match "jorgen.arntzen@gmail.com" from)"gmail"))))
 	    (setq message-sendmail-extra-arguments (list '"-a" account))))))
-  
+
   :init
   (add-hook 'message-send-mail-hook 'cg-feed-msmtp)
 
@@ -2642,7 +2643,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 				 (("Universitetet i Oslo" visible nil nil))
 				 (("Gmail" visible nil nil))
 				 (("Diverse" visible))))
-     
+
      (setq gnus-topic-alist
 	   '(("Universitetet i Oslo"
 	      "INBOX"
@@ -2744,7 +2745,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
   (use-package latex-pretty-symbols
     :load-path "elpa/latex-pretty-symbols-20151112.244/")
-  
+
   (use-package latex
     :defer t
     :config
@@ -2755,7 +2756,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 		(diminish' cdlatex-mode)
 		(hl-line-mode 1)
                 (pandoc-mode))))
-  
+
   (add-hook 'LaTeX-mode-hook
 	    (lambda ()
 	      (LaTeX-math-mode)
@@ -2764,7 +2765,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 	      (diminish' cdlatex-mode)
 	      (hl-line-mode 1)
               (pandoc-mode)))
-  
+
   (info-lookup-add-help :mode 'LaTeX-mode
 			:regexp ".*"
 			:parse-rule "\\\\?[a-zA-Z]+\\|\\\\[^a-zA-Z]"
@@ -2777,7 +2778,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
   (add-to-list 'TeX-view-program-selection
                '(output-pdf "PDF Tools"))
-  
+
   ;; Følgende gjør det mulig å bruke Biber, i tillegg til BibTeX, i AUCTeX:
   (defun TeX-run-Biber (name command file)
     "Create a process for NAME using COMMAND to format FILE with Biber."
@@ -2852,7 +2853,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
   (use-package ob-R)
   (use-package ob-shell)
   (use-package ox-md)
-  
+
   ;; Følgende pakke sørger for fine punktlister:
   (use-package org-bullets
     :load-path "elpa/org-bullets-20140918.1137/")
@@ -2884,7 +2885,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
          (reftex-parse-all))
     (define-key org-mode-map (kbd "C-c [") 'reftex-citation))
 
-  ;; Følgende innstillinger gjør at Yasnippet fungerer ordentlig i Org-mode: 
+  ;; Følgende innstillinger gjør at Yasnippet fungerer ordentlig i Org-mode:
   (defun yas-org-very-safe-expand ()
     (let ((yas-fallback-behavior 'return-nil))
       (and (fboundp 'yas-expand) (yas-expand))))
