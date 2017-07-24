@@ -198,7 +198,7 @@
   (defvar emacs-min-width))
 
 (defvar emacs-min-top 50)
-(defvar emacs-min-left 335)
+(defvar emacs-min-left 550)
 (defvar emacs-min-height 40)
 (defvar emacs-min-width 85)
 (defvar emacs-min-left-fringe 0)
@@ -291,7 +291,7 @@
 (use-package gh                 :defer t :load-path "elpa/gh-20170512.2049/"               )
 (use-package git                :defer t :load-path "elpa/git-20140128.241/"               )
 (use-package gntp               :defer t :load-path "elpa/gntp-20141024.1950/"             )
-(use-package helm-core          :defer t :load-path "elpa/helm-core-20170718.2220/"        )
+(use-package helm-core          :defer t :load-path "elpa/helm-core-20170724.1245/"        )
 (use-package ht                 :defer t :load-path "elpa/ht-20161015.1945/"               )
 (use-package jedi-core          :defer t :load-path "elpa/jedi-core-20170121.610/"         )
 (use-package let-alist          :defer t :load-path "elpa/let-alist-1.0.5/"                )
@@ -1722,7 +1722,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package ess-site
-  :load-path "elpa/ess-20170710.118/lisp/"
+  :load-path "elpa/ess-20170722.1338/lisp/"
   :commands R
   :mode (("\\.R\\'" . R-mode)
          ("\\.Rnw\\'" . Rnw-mode)
@@ -1755,7 +1755,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package magit
-  :load-path "elpa/magit-20170711.1307/" "elpa/with-editor-20170707.1401/"
+  :load-path "elpa/magit-20170723.1326/" "elpa/with-editor-20170707.1401/"
   :diminish auto-revert-mode
   :bind (("C-x g" . magit-status)
          ("C-x G" . magit-status-with-prefix)
@@ -1861,7 +1861,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 (use-package pdf-tools
   :if window-system
-  :load-path "elpa/pdf-tools-20170417.150/"
+  :load-path "elpa/pdf-tools-20170721.718/"
 
   :init
   (pdf-tools-install))
@@ -2156,7 +2156,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package bbdb-com
-  :load-path "elpa/bbdb-20170129.2224/"
+  :load-path "elpa/bbdb-20170721.2015/"
   :commands bbdb-create
   :bind ("M-B" . bbdb)
 
@@ -2204,7 +2204,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package flycheck
-  :load-path "elpa/flycheck-20170719.1412/"
+  :load-path "elpa/flycheck-20170723.839/"
   :diminish flycheck-mode
   :defer 5
 
@@ -2218,7 +2218,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 (use-package helm-config
   :demand t
-  :load-path "elpa/helm-20170717.727/"
+  :load-path "elpa/helm-20170723.2339/"
   :bind (("C-c h" . helm-command-prefix)
          ("C-h a" . helm-apropos)
          ("C-h m" . my-helm-apropos)
@@ -2292,7 +2292,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package hydra
-  :load-path "elpa/hydra-20170325.815/"
+  :load-path "elpa/hydra-20170722.818/"
   :defer 10
 
   :config
@@ -2311,7 +2311,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 (use-package ivy
   :disabled t
-  :load-path "elpa/ivy-20170718.1143/")
+  :load-path "elpa/ivy-20170721.923/")
 
 
 (use-package lusty-explorer
@@ -2432,7 +2432,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package pandoc-mode
-  :load-path "elpa/pandoc-mode-20170503.606/"
+  :load-path "elpa/pandoc-mode-20170720.127/"
   :diminish pandoc-mode
 
   :config
@@ -2458,7 +2458,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package projectile
-  :load-path "elpa/projectile-20170416.148/"
+  :load-path "elpa/projectile-20170724.442/"
   :diminish projectile-mode
   :commands projectile-mode
   :defer 5
@@ -2570,7 +2570,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package yasnippet
-  :load-path "elpa/yasnippet-20170717.1946/"
+  :load-path "elpa/yasnippet-20170723.1530/"
   :demand t
   :diminish yas-minor-mode
   :commands (yas-expand yas-minor-mode)
@@ -2817,7 +2817,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (use-package org
-  :load-path "elpa/org-20170717/"
+  :load-path "elpa/org-20170724/"
   :diminish orgstruct-mode
   :mode ("\\.org\\'" . org-mode)
   :bind (("C-c l" . org-store-link)
@@ -2865,7 +2865,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
     (require 'outshine))
 
   (use-package outshine
-    :load-path "elpa/outshine-20170414.1217/"
+    :load-path "elpa/outshine-20170721.521/"
                "elpa/navi-mode-20170414.1228/"
     :commands outshine-hook-function
     :config
