@@ -409,18 +409,18 @@
  '(gnus-message-archive-group (quote ((format-time-string "sent.%Y"))))
  '(gnus-secondary-select-methods
    (quote
-    ((nnimap "gmail"
-             (nnimap-address "imap.gmail.com")
-             (nnimap-server-port 993)
-             (nnimap-stream ssl)
-             (nnir-search-engine imap)))))
- '(gnus-select-method
-   (quote
-    (nnimap "uio"
+    ((nnimap "uio"
             (nnimap-address "imap.uio.no")
             (nnimap-server-port 993)
             (nnimap-stream ssl)
-            (nnir-search-engine imap))))
+            (nnir-search-engine imap)))))
+ '(gnus-select-method
+   (quote
+    (nnimap "gmail"
+             (nnimap-address "imap.gmail.com")
+             (nnimap-server-port 993)
+             (nnimap-stream ssl)
+             (nnir-search-engine imap))))
  '(gnus-summary-line-format
    "%0{%U%R%z%}%3{│%} %1{%d%} %3{│%}  %4{%-23,23f%}  %3{│%} %1{%B%}%s\\n")
  '(gnus-topic-line-format "%i[ %(%{%n%}%): %A ]%v
@@ -579,8 +579,8 @@
  '(mail-source-report-new-mail-interval 5)
  '(mail-sources
    (quote
-    ((imap :server "imap.uio.no" :port 993 :user "jorgenar" :stream ssl)
-     (imap :server "imap.gmail.com" :port 993 :user "jorgen.arntzen@gmail.com" :stream ssl))))
+    ((imap :server "imap.gmail.com" :port 993 :user "jorgen.arntzen@gmail.com" :stream ssl)
+     (imap :server "imap.uio.no" :port 993 :user "jorgenar" :stream ssl))))
  '(mail-user-agent (quote gnus-user-agent))
  '(markdown-command "pandoc -f markdown_mmd -S")
  '(markdown-command-needs-filename t)

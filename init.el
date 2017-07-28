@@ -282,7 +282,7 @@
 (use-package button-lock        :defer t :load-path "elpa/button-lock-20150223.554/"       )
 (use-package concurrent         :defer t :load-path "elpa/concurrent-20161228.1930/"       )
 (use-package ctable             :defer t :load-path "elpa/ctable-20140304.1659/"           )
-(use-package dash               :defer t :load-path "elpa/dash-20170613.151/"              )
+(use-package dash               :defer t :load-path "elpa/dash-20170727.212/"              )
 (use-package deferred           :defer t :load-path "elpa/deferred-20170531.2135/"         )
 (use-package epc                :defer t :load-path "elpa/epc-20140609.2234/"              )
 (use-package epl                :defer t :load-path "elpa/epl-20150517.433/"               )
@@ -291,7 +291,7 @@
 (use-package gh                 :defer t :load-path "elpa/gh-20170512.2049/"               )
 (use-package git                :defer t :load-path "elpa/git-20140128.241/"               )
 (use-package gntp               :defer t :load-path "elpa/gntp-20141024.1950/"             )
-(use-package helm-core          :defer t :load-path "elpa/helm-core-20170724.1245/"        )
+(use-package helm-core          :defer t :load-path "elpa/helm-core-20170725.419/"         )
 (use-package ht                 :defer t :load-path "elpa/ht-20161015.1945/"               )
 (use-package jedi-core          :defer t :load-path "elpa/jedi-core-20170121.610/"         )
 (use-package let-alist          :defer t :load-path "elpa/let-alist-1.0.5/"                )
@@ -1722,7 +1722,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package ess-site
-  :load-path "elpa/ess-20170722.1338/lisp/"
+  :load-path "elpa/ess-20170726.609/lisp/"
   :commands R
   :mode (("\\.R\\'" . R-mode)
          ("\\.Rnw\\'" . Rnw-mode)
@@ -1755,7 +1755,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package magit
-  :load-path "elpa/magit-20170723.1326/" "elpa/with-editor-20170707.1401/"
+  :load-path "elpa/magit-20170725.1153/" "elpa/with-editor-20170726.941/"
   :diminish auto-revert-mode
   :bind (("C-x g" . magit-status)
          ("C-x G" . magit-status-with-prefix)
@@ -1841,7 +1841,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package markdown-mode
-  :load-path "elpa/markdown-mode-20170712.1703/"
+  :load-path "elpa/markdown-mode-20170724.2018/"
   :mode (("\\.md\\'" . markdown-mode)
          ("\\.markdown\\'" . markdown-mode))
 
@@ -2156,7 +2156,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package bbdb-com
-  :load-path "elpa/bbdb-20170721.2015/"
+  :load-path "elpa/bbdb-20170725.300/"
   :commands bbdb-create
   :bind ("M-B" . bbdb)
 
@@ -2182,7 +2182,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package cdlatex
-  :load-path "elpa/cdlatex-20140707.426/" "elpa/auctex-11.90.2/")
+  :load-path "elpa/cdlatex-20140707.426/" "elpa/auctex-11.91.0/")
 
 
 (use-package company
@@ -2199,7 +2199,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 (use-package find-file-in-project
   :disabled t
-  :load-path "elpa/find-file-in-project-20170531.2054/")
+  :load-path "elpa/find-file-in-project-20170725.133/")
 ;; :bind ("C-c f" . find-file-in-project))
 
 
@@ -2218,7 +2218,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 (use-package helm-config
   :demand t
-  :load-path "elpa/helm-20170723.2339/"
+  :load-path "elpa/helm-20170724.2137/"
   :bind (("C-c h" . helm-command-prefix)
          ("C-h a" . helm-apropos)
          ("C-h m" . my-helm-apropos)
@@ -2311,7 +2311,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 (use-package ivy
   :disabled t
-  :load-path "elpa/ivy-20170721.923/")
+  :load-path "elpa/ivy-20170726.1022/")
 
 
 (use-package lusty-explorer
@@ -2458,7 +2458,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package projectile
-  :load-path "elpa/projectile-20170724.442/"
+  :load-path "elpa/projectile-20170727.602/"
   :diminish projectile-mode
   :commands projectile-mode
   :defer 5
@@ -2627,8 +2627,8 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 		    (message-fetch-field "from")))
 		 (account
 		  (cond
-		   ((string-match "jorgenar@student.sv.uio.no" from)"uio")
-		   ((string-match "jorgen.arntzen@gmail.com" from)"gmail"))))
+		   ((string-match "jorgen.arntzen@gmail.com" from)"gmail")
+		   ((string-match "jorgenar@student.sv.uio.no" from)"uio"))))
 	    (setq message-sendmail-extra-arguments (list '"-a" account))))))
 
   :init
@@ -2638,28 +2638,24 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
   :config
   (eval-after-load 'gnus-topic
-  '(progn
-     (setq gnus-topic-topology '(("Gnus" visible)
-				 (("Universitetet i Oslo" visible nil nil))
-				 (("Gmail" visible nil nil))
-				 (("Diverse" visible))))
+    '(progn
+       (setq gnus-topic-topology '(("Gnus" visible)
+                                   (("Gmail" visible nil nil))
+                                   (("Universitetet i Oslo" visible nil nil))
+                                   (("Diverse" visible))))
 
-     (setq gnus-topic-alist
-	   '(("Universitetet i Oslo"
-	      "INBOX"
-	      "Sendte elementer"
-	      "Slettede elementer")
-	     ("Gmail"
-	      "nnimap+gmail:INBOX"
-              "nnimap+gmail:R-help"
-              "nnimap+gmail:R-SIG-Mac"
-              "nnimap+gmail:help-gnu-emacs"
-	      "nnimap+gmail:[Gmail]/Sendt e-post"
-	      "nnimap+gmail:[Gmail]/Papirkurv")
-	     ("Diverse"
-	      "nnfolder+archive:sent.2016"
-	      "nndraft:drafts")
-	     ("Gnus")))))
+       (setq gnus-topic-alist
+             '(("Gmail"
+                "INBOX"
+                "[Gmail]/Sendt e-post"
+                "[Gmail]/Papirkurv")
+               ("Universitetet i Oslo"
+                "nnimap+uio:INBOX"
+                "nnimap+uio:Sendte elementer"
+                "nnimap+uio:Slettede elementer")
+               ("Diverse"
+                "nndraft:drafts")
+               ("Gnus")))))
 
   (defun gnus-user-format-function-G (arg)
     (let ((mapped-name (assoc gnus-tmp-group group-name-map)))
@@ -2668,15 +2664,11 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 	(cdr mapped-name))))
 
   (setq group-name-map '(("INBOX" . "Innboks")
-			 ("Sendte elementer" . "Sendt e-post")
-			 ("Slettede elementer" . "Papirkurv")
-			 ("nnimap+gmail:INBOX" . "Innboks")
-                         ("nnimap+gmail:R-help" . "R-help")
-                         ("nnimap+gmail:R-SIG-Mac" . "R-SIG-Mac")
-                         ("nnimap+gmail:help-gnu-emacs" . "help-gnu-emacs")
-			 ("nnimap+gmail:[Gmail]/Sendt e-post" . "Sendt e-post")
-			 ("nnimap+gmail:[Gmail]/Papirkurv" . "Papirkurv")
-			 ("nnfolder+archive:sent.2016" . "Sendt e-post 2016")
+			 ("[Gmail]/Sendt e-post" . "Sendt e-post")
+			 ("[Gmail]/Papirkurv" . "Papirkurv")
+                         ("nnimap+uio:INBOX" . "Innboks")
+			 ("nnimap+uio:Sendte elementer" . "Sendt e-post")
+			 ("nnimap+uio:Slettede elementer" . "Papirkurv")
 			 ("nndraft:drafts" . "Utkast")))
 
   (use-package gnus-dired
@@ -2717,7 +2709,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (use-package tex-site
-  :load-path "elpa/auctex-11.90.2/"
+  :load-path "elpa/auctex-11.91.0/"
   :defines (latex-help-cmd-alist latex-help-file)
   :mode ("\\.tex\\'" . TeX-mode)
 
