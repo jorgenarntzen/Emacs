@@ -410,17 +410,17 @@
  '(gnus-secondary-select-methods
    (quote
     ((nnimap "uio"
-            (nnimap-address "imap.uio.no")
-            (nnimap-server-port 993)
-            (nnimap-stream ssl)
-            (nnir-search-engine imap)))))
+             (nnimap-address "imap.uio.no")
+             (nnimap-server-port 993)
+             (nnimap-stream ssl)
+             (nnir-search-engine imap)))))
  '(gnus-select-method
    (quote
     (nnimap "gmail"
-             (nnimap-address "imap.gmail.com")
-             (nnimap-server-port 993)
-             (nnimap-stream ssl)
-             (nnir-search-engine imap))))
+            (nnimap-address "imap.gmail.com")
+            (nnimap-server-port 993)
+            (nnimap-stream ssl)
+            (nnir-search-engine imap))))
  '(gnus-summary-line-format
    "%0{%U%R%z%}%3{│%} %1{%d%} %3{│%}  %4{%-23,23f%}  %3{│%} %1{%B%}%s\\n")
  '(gnus-topic-line-format "%i[ %(%{%n%}%): %A ]%v
@@ -586,6 +586,7 @@
  '(markdown-command-needs-filename t)
  '(markdown-enable-math t)
  '(markdown-open-command "open-markdown")
+ '(menu-bar-mode nil)
  '(message-directory "~/.emacs.d/gnus/mail/")
  '(message-fill-column 78)
  '(message-interactive t)

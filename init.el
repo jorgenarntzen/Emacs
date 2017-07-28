@@ -33,9 +33,9 @@
 
 ;; Hvis Emacs kjører i vindu er det ønskelig med meny. I terminal er menyen
 ;; forstyrrende:
-(if window-system
-    (menu-bar-mode t)
-  (menu-bar-mode -1))
+;;(if window-system
+;;    (menu-bar-mode t)
+;;  (menu-bar-mode -1))
 
 ;; Følgende pakke utvider Emacs Lisp med konvensjoner fra det vanlige
 ;; Lisp-språket:
