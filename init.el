@@ -291,7 +291,7 @@
 (use-package gh                 :defer t :load-path "elpa/gh-20170512.2049/"               )
 (use-package git                :defer t :load-path "elpa/git-20140128.241/"               )
 (use-package gntp               :defer t :load-path "elpa/gntp-20141024.1950/"             )
-(use-package helm-core          :defer t :load-path "elpa/helm-core-20170725.419/"         )
+(use-package helm-core          :defer t :load-path "elpa/helm-core-20170727.1245/"        )
 (use-package ht                 :defer t :load-path "elpa/ht-20161015.1945/"               )
 (use-package jedi-core          :defer t :load-path "elpa/jedi-core-20170121.610/"         )
 (use-package let-alist          :defer t :load-path "elpa/let-alist-1.0.5/"                )
@@ -1731,7 +1731,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package gnuplot-mode
-  :load-path "elpa/gnuplot-mode-20151122.2339/"
+  :load-path "elpa/gnuplot-mode-20170727.1339/"
   :mode ("\\.gp\\'" . gnuplot-mode))
 
 
