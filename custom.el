@@ -211,8 +211,8 @@
  '(default-frame-alist
     (quote
      ((alpha 100 . 100)
-      (top . 25)
-      (left . 100)
+      (top . 60)
+      (left . 250)
       (height . 40)
       (width . 85)
       (left-fringe . 0)
