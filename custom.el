@@ -3,7 +3,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:height 110 :family "Inconsolata"))))
  '(font-lock-comment-face ((t (:foreground "#8d8d84")))))
 
 (custom-set-variables
@@ -211,10 +210,10 @@
  '(default-frame-alist
     (quote
      ((alpha 100 . 100)
-      (top . 60)
-      (left . 250)
-      (height . 40)
-      (width . 85)
+      (top . 111)
+      (left . 340)
+      (height . 35)
+      (width . 80)
       (left-fringe . 0)
       (right-fringe . 0)
       (vertical-scroll-bars)
@@ -565,10 +564,10 @@
  '(kill-do-not-save-duplicates t)
  '(kill-whole-line t)
  '(large-file-warning-threshold nil)
+ '(ledger-binary-path "/usr/bin/ledger")
  '(ledger-post-use-completion-engine :ido)
  '(ledger-post-use-ido t)
  '(line-number-mode t)
- '(line-spacing 2)
  '(load-prefer-newer t)
  '(magit-completing-read-function (quote helm--completing-read-default))
  '(magit-fetch-arguments nil)
@@ -673,6 +672,7 @@
  '(org-enforce-todo-dependencies t)
  '(org-export-babel-evaluate nil)
  '(org-export-backends (quote (ascii beamer html icalendar latex md odt)))
+ '(org-export-use-babel nil)
  '(org-extend-today-until 8)
  '(org-fast-tag-selection-single-key (quote expert))
  '(org-fontify-done-headline t)
@@ -773,7 +773,7 @@
  '(temp-buffer-resize-mode t nil (help))
  '(text-mode-hook
    (quote
-    (turn-on-flyspell visual-line-mode turn-on-auto-fill
+    (turn-on-flyspell visual-line-mode turn-off-auto-fill
                       (lambda nil
                         (ignore-errors
                           (diminish
