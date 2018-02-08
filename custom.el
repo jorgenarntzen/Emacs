@@ -188,6 +188,7 @@
  '(bbdb-pop-up-window-size 0.25)
  '(bbdb-silent t)
  '(bibtex-dialect "BibTeX")
+ '(blink-cursor-mode t)
  '(byte-compile-verbose nil)
  '(column-number-mode t)
  '(comint-move-point-for-output t)
