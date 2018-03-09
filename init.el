@@ -48,7 +48,7 @@
 (add-to-list 'load-path "~/.emacs.d/elpa/diminish-20170419.1036/")
 (require 'diminish)
 
-(add-to-list 'load-path "~/.emacs.d/elpa/use-package-20180206.1414/")
+(add-to-list 'load-path "~/.emacs.d/elpa/use-package-20180308.1445/")
 (require 'use-package)
 
 ;; Denne seksjonen inneholder tilpasninger for oppstart, og er under
@@ -288,11 +288,11 @@
 (use-package epl                :defer t :load-path "elpa/epl-20180205.1249/"              )
 (use-package f                  :defer t :load-path "elpa/f-20180106.122/"                 )
 (use-package fuzzy              :defer t :load-path "elpa/fuzzy-20150729.2037/"            )
-(use-package gh                 :defer t :load-path "elpa/gh-20180112.1110/"               )
-(use-package ghub               :defer t :load-path "elpa/ghub-20180201.414/"              )
+(use-package gh                 :defer t :load-path "elpa/gh-20180308.1338/"               )
+(use-package ghub               :defer t :load-path "elpa/ghub-20180308.753/"              )
 (use-package git                :defer t :load-path "elpa/git-20140128.241/"               )
 (use-package gntp               :defer t :load-path "elpa/gntp-20141024.1950/"             )
-(use-package helm-core          :defer t :load-path "elpa/helm-core-20180206.10/"          )
+(use-package helm-core          :defer t :load-path "elpa/helm-core-20180306.2241/"        )
 (use-package ht                 :defer t :load-path "elpa/ht-20180129.1434/"               )
 (use-package jedi-core          :defer t :load-path "elpa/jedi-core-20170121.610/"         )
 (use-package let-alist          :defer t :load-path "elpa/let-alist-1.0.5/"                )
@@ -307,9 +307,9 @@
 (use-package pos-tip            :defer t :load-path "elpa/pos-tip-20150318.813/"           )
 (use-package powerline          :defer t :load-path "elpa/powerline-20180115.1942/"        )
 (use-package python-environment :defer t :load-path "elpa/python-environment-20150310.153/")
-(use-package pyvenv             :defer t :load-path "elpa/pyvenv-20180126.303/"            )
+(use-package pyvenv             :defer t :load-path "elpa/pyvenv-20180304.712/"            )
 (use-package rich-minority      :defer t :load-path "elpa/rich-minority-20170813.622/"     )
-(use-package s                  :defer t :load-path "elpa/s-20171102.227/"                 )
+(use-package s                  :defer t :load-path "elpa/s-20180227.51/"                  )
 (use-package seq                :defer t :load-path "elpa/seq-2.20/"                       )
 (use-package tablist            :defer t :load-path "elpa/tablist-20170219.1935/"          )
 (use-package uuidgen            :defer t :load-path "elpa/uuidgen-20140918.1601/"          )
@@ -322,7 +322,7 @@
 ;; Den andre listen er grafiske temaer:
 
 (use-package solarized-theme    :defer t :load-path "elpa/solarized-theme-20180101.42/"    )
-(use-package zenburn-theme      :defer t :load-path "elpa/zenburn-theme-20180123.59/"      )
+(use-package zenburn-theme      :defer t :load-path "elpa/zenburn-theme-20180222.1757/"    )
 
 
 ;; Den tredje listen er pakker som kommer pre-installert med Emacs:
@@ -1723,7 +1723,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package ess-site
-  :load-path "elpa/ess-20180206.354/lisp/"
+  :load-path "elpa/ess-20180306.1503/lisp/"
   :commands R
   :mode (("\\.R\\'" . R-mode)
          ("\\.Rnw\\'" . Rnw-mode)
@@ -1742,7 +1742,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package ledger-mode
-  :load-path "elpa/ledger-mode-20180205.1432/"
+  :load-path "elpa/ledger-mode-20180224.1936/"
   :commands ledger-mode
   :mode (("\\.ledger\\'" . ledger-mode)
          ("\\.dat\\'" . ledger-mode))
@@ -1756,7 +1756,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package magit
-  :load-path "elpa/magit-20180207.1417/" "elpa/with-editor-20180111.433/"
+  :load-path "elpa/magit-20180307.631/" "elpa/with-editor-20180217.548/"
   :diminish auto-revert-mode
   :bind (("C-x g" . magit-status)
          ("C-x G" . magit-status-with-prefix)
@@ -1823,7 +1823,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
   (use-package magit-popup
     :defer t
-    :load-path "elpa/magit-popup-20180119.111/")
+    :load-path "elpa/magit-popup-20180217.910/")
 
   (unbind-key "M-h" magit-mode-map)
   (unbind-key "M-s" magit-mode-map)
@@ -1868,13 +1868,13 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package python-mode
-  :load-path "elpa/python-0.25.2/"
+  :load-path "elpa/python-0.26.1/"
   :mode ("\\.py\\'" . python-mode)
   :interpreter ("python" . python-mode)
 
   :init
   (use-package elpy
-    :load-path "elpa/elpy-20180204.1538/"
+    :load-path "elpa/elpy-20180302.2001/"
     :diminish elpy-mode
     :init
     (elpy-enable))
@@ -2186,7 +2186,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package company
-  :load-path "elpa/company-20180206.226/"
+  :load-path "elpa/company-20180228.1550/"
   :diminish company-mode
   :commands company-mode
 
@@ -2199,12 +2199,12 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 (use-package find-file-in-project
   :disabled t
-  :load-path "elpa/find-file-in-project-20180201.2102/")
+  :load-path "elpa/find-file-in-project-20180224.2103/")
 ;; :bind ("C-c f" . find-file-in-project))
 
 
 (use-package flycheck
-  :load-path "elpa/flycheck-20180204.1346/"
+  :load-path "elpa/flycheck-20180308.535/"
   :diminish flycheck-mode
   :defer 5
 
@@ -2218,7 +2218,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 (use-package helm-config
   :demand t
-  :load-path "elpa/helm-20180206.604/"
+  :load-path "elpa/helm-20180305.1056/"
   :bind (("C-c h" . helm-command-prefix)
          ("C-h a" . helm-apropos)
          ("C-h m" . my-helm-apropos)
@@ -2286,13 +2286,13 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package helm-swoop
-  :load-path "elpa/helm-swoop-20170923.2127/"
+  :load-path "elpa/helm-swoop-20180215.354/"
   :bind (("M-s o" . helm-swoop)
          ("M-s /" . helm-multi-swoop)))
 
 
 (use-package hydra
-  :load-path "elpa/hydra-20180201.846/"
+  :load-path "elpa/hydra-20180226.1116/"
   :defer 10
 
   :config
@@ -2311,7 +2311,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 (use-package ivy
   :disabled t
-  :load-path "elpa/ivy-20180207.1231/")
+  :load-path "elpa/ivy-20180305.1340/")
 
 
 (use-package lusty-explorer
@@ -2458,7 +2458,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package projectile
-  :load-path "elpa/projectile-20180128.655/"
+  :load-path "elpa/projectile-20180227.1743/"
   :diminish projectile-mode
   :commands projectile-mode
   :defer 5
@@ -2466,7 +2466,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
   :config
   (use-package helm-projectile
-    :load-path "elpa/helm-projectile-20170926.1123/"
+    :load-path "elpa/helm-projectile-20180228.1125/"
     :config
     (setq projectile-completion-system 'helm)
     (helm-projectile-on))
@@ -2570,7 +2570,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 
 
 (use-package yasnippet
-  :load-path "elpa/yasnippet-20180204.1613/"
+  :load-path "elpa/yasnippet-20180306.424/"
   :demand t
   :diminish yas-minor-mode
   :commands (yas-expand yas-minor-mode)
@@ -2729,7 +2729,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
     latex-help-cmd-alist)
 
   (use-package ebib
-    :load-path "elpa/ebib-20180204.1402/"
+    :load-path "elpa/ebib-20180213.531/"
     :bind ("C-c E" . ebib)
     :preface
     (use-package parsebib
@@ -2811,7 +2811,7 @@ The argument OLD has to be nil the first call of this function, and t for subseq
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (use-package org
-  :load-path "elpa/org-20180205/"
+  :load-path "elpa/org-20180305/"
   :diminish orgstruct-mode
   :mode ("\\.org\\'" . org-mode)
   :bind (("C-c l" . org-store-link)
